@@ -1,0 +1,64 @@
+Amazon Linux 
+Terraform install-
+sudo yum install -y yum-utils shadow-utils
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+sudo yum -y install terraform
+terraform -v
+mkdir firstterra
+nano main.tf
+ls
+ls -a
+terraform init(download binary)
+ls -a (hidden file)
+terraform validate(syntax)
+terraform fmt
+terraform plan(preview)
+export AWS_ACCESS_KEY_ID="AKIAXPQ5Z3G6ZNP42KU4"
+export AWS_SECRET_ACCESS_KEY="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"
+terraform plan
+terraform apply(print)(first time apply .tfstate file create)
+terraform show
+terraform apply
+nano main.tf(changes)
+terraform apply
+nano main.tf(changes)
+terraform apply
+terraform state list
+terraform state show aws_instance.mye[0]
+terraform apply --refresh-only
+terraform state show aws_instance.mye[0]
+terraform destroy
+mkdir variabledemo 
+cd variabledemo
+nano main.tf
+ls
+nano terraform.tfvars(access key and secret key)
+terraform init 
+terraform validate
+terraform plan
+terraform apply
+terraform destroy
+mkdir provisionerwala
+cd provisionerwala
+nano main.tf
+cd
+puttygen open ppk file convert pem file
+power shell open and send ec2 instance public ip 
+putty open ls mv pem file provisionerwala
+cd provisionerwala
+ls
+teraaaa.pem 
+nano terraform.tfvars(access key and secret key)
+terraform init 
+terraform validate
+terraform plan
+terraform apply
+terraform destroy
+nano main.tf
+nano outputs.tf
+nano variables.tf
+nano terraform.tfvars
+nano datas.tf
+nano alb.tf
+
+
